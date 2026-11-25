@@ -48,5 +48,5 @@ docker run -d -p 4000:5000 --name genshin-api genshin-api
 
 - `main`: rama base.
 - `dev`: integración.
-- `feature/**`: desarrollo; las construye el job de Jenkins `genshin-api_dev` (puerto 4001).
-- `release/**`: versiones a producción; las construye el job `genshin-api_prod` (puerto 4000).
+- `feature/**`: desarrollo; las construye el job de Jenkins `genshin_api_dev` (puerto 4001).
+- `release/**`: versiones a producción; las construye el job `genshin_api_prod` (puerto 4000).
