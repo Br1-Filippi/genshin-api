@@ -22,6 +22,7 @@ Cambios respecto del original:
 |---|---|
 | `GET /` | Tipos de datos disponibles |
 | `GET /health` | Estado de la API |
+| `GET /stats` | Cantidad de entidades por tipo, total y tipo con más datos |
 | `GET /:type` | Ids de las entidades de un tipo (`/characters`) |
 | `GET /:type/all?lang=es&campo=valor` | Todas las entidades, con filtros por campo (`/characters/all?vision=pyro&rarity=5`) |
 | `GET /:type/:id?lang=es` | Una entidad (`/characters/hu-tao?lang=es`) |
@@ -48,5 +49,5 @@ docker run -d -p 4000:5000 --name genshin-api genshin-api
 
 - `main`: rama base.
 - `dev`: integración.
-- `feature/**`: desarrollo; las construye el job de Jenkins `genshin-api_dev` (puerto 4001).
-- `release/**`: versiones a producción; las construye el job `genshin-api_prod` (puerto 4000).
+- `feature/**`: desarrollo; las construye el job de Jenkins `genshin_api_dev` (puerto 4001).
+- `release/**`: versiones a producción; las construye el job `genshin_api_prod` (puerto 4000).
