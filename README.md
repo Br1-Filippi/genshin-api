@@ -22,6 +22,7 @@ Cambios respecto del original:
 |---|---|
 | `GET /` | Tipos de datos disponibles |
 | `GET /health` | Estado de la API |
+| `GET /stats` | Cantidad de entidades por tipo, total y tipo con más datos |
 | `GET /:type` | Ids de las entidades de un tipo (`/characters`) |
 | `GET /:type/all?lang=es&campo=valor` | Todas las entidades, con filtros por campo (`/characters/all?vision=pyro&rarity=5`) |
 | `GET /:type/:id?lang=es` | Una entidad (`/characters/hu-tao?lang=es`) |

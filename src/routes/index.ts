@@ -12,6 +12,7 @@ import {
   getImage,
   getTypes,
 } from '../modules/filesystem';
+import { getStats } from '../modules/stats';
 
 type QueryValue = string | string[] | undefined;
 
@@ -40,6 +41,10 @@ router.get('/', async (ctx) => {
 
 router.get('/health', (ctx) => {
   ctx.body = { status: 'ok' };
+});
+
+router.get('/stats', async (ctx) => {
+  ctx.body = await getStats();
 });
 
 router.get('/:type/all', async (ctx) => {
